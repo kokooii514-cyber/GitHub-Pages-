@@ -709,7 +709,7 @@
                 <h3 class="formula-title">Hash Power Value Formula</h3>
                 <div class="math-container">
                     $$
-                    V(t) = \sum_{i=1}^{N} \left( H_i(t) \cdot \eta_i \cdot \frac{C_b}{C_i(t)} \cdot e^{-\gamma t} \right) + \lambda \cdot \ln\left(1 + \frac{E_q(t)}{E_0}\right) + \beta \cdot N(t)^\alpha
+                    V(t) = \sum_{i=1}^{n} \left[ H_i(t) \times \eta_i \times \frac{C_b}{C_i} \times e^{-\lambda t} \right] + \alpha \cdot \log\left(1 + \frac{E_q(t)}{E_0}\right) \times \beta(t)
                     $$
                 </div>
                 <p>This multidimensional formula dynamically quantifies computing power value, incorporating time decay, emotional value, and network effects.</p>
@@ -719,7 +719,7 @@
                 <h3 class="formula-title">Image Generation Formula</h3>
                 <div class="math-container">
                     $$
-                    I(x,y,t) = \mathcal{F}^{-1} \left\{ \sum_{k=1}^{M} \left[ w_k(t) \cdot \delta_k(f_x, f_y) \cdot e^{-2\pi j \cdot (f_x x + f_y y)} \right] \cdot A(f_x, f_y, B(t), E(t)) \cdot G(t, \tau) \right\}
+                    I(x,y,t) = \Re\left[ \int_{\Omega} \left( \sum_{k=1}^{K} \frac{\delta(\text{emotion}_k) \cdot w_k(t)}{1 + e^{-0.7(\text{rarity}_k - 5)}} \cdot A(\theta, \phi) \right) e^{-j2\pi (f_x x + f_y y)} \cdot B(t)  d\mathbf{f} \right]
                     $$
                 </div>
                 <p>Transforms emotional data into visual representations through frequency domain conversion, supporting time evolution and environmental adaptation.</p>
